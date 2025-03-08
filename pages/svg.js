@@ -515,7 +515,7 @@ function PostgresSQL() {
     </svg>
   );
 }
-
+export default PHP;
 export {
   PHP,
   Laravel,

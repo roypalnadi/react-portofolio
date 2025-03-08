@@ -51,4 +51,5 @@ function FadeTop({ children }) {
   );
 }
 
+export default FadeRight;
 export { FadeRight, FadeLeft, FadeTop };
