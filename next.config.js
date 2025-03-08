@@ -4,6 +4,7 @@ const nextConfig = {
   distDir: "out",
   reactStrictMode: true,
   swcMinify: true,
+  basePath: process.env.PAGES_BASE_PATH,
   images: {
     unoptimized: true, // Hindari masalah gambar saat export
   },
