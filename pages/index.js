@@ -3,14 +3,14 @@ import { useState, useRef } from "react";
 import {
   VscAccount,
   VscHome,
+  VscQuestion,
   VscSettingsGear,
-  VscTools,
 } from "react-icons/vsc";
 import Particles from "../reactbits/bacgrounds/Particles/Particles";
 import Dock from "../reactbits/components/Dock/Dock";
 import Main from "./sections/main.js";
 import Profile from "./sections/profile.js";
-import EssentialTool from "./sections/essential-tool.js";
+import WhyMe from "./sections/why-me.js";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(true);
@@ -18,7 +18,7 @@ export default function Home() {
   const sectionsRef = {
     home: useRef(null),
     profile: useRef(null),
-    tools: useRef(null),
+    whyMe: useRef(null),
   };
 
   const items = [
@@ -31,17 +31,17 @@ export default function Home() {
     },
     {
       icon: <VscAccount size={18} />,
-      label: "About",
+      label: "Profile",
       classNameIcon: "dark:text-white",
       onClick: () =>
         sectionsRef.profile.current?.scrollIntoView({ behavior: "smooth" }),
     },
     {
-      icon: <VscTools size={18} />,
-      label: "Profile",
+      icon: <VscQuestion size={18} />,
+      label: "Why Hire Me ?",
       classNameIcon: "dark:text-white",
       onClick: () =>
-        sectionsRef.tools.current?.scrollIntoView({ behavior: "smooth" }),
+        sectionsRef.whyMe.current?.scrollIntoView({ behavior: "smooth" }),
     },
     {
       icon: <VscSettingsGear size={18} />,
@@ -82,8 +82,8 @@ export default function Home() {
         <section ref={sectionsRef.profile} className="py-10">
           <Profile />
         </section>
-        <section ref={sectionsRef.tools} className="py-10">
-          <EssentialTool />
+        <section ref={sectionsRef.whyMe} className="py-10">
+          <WhyMe />
         </section>
       </main>
     </div>

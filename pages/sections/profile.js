@@ -8,14 +8,14 @@ export default function Profile() {
       <div className="lg:flex gap-10 justify-between">
         <FadeLeft className="content-center">
           <div className="">
-            <div className="mx-auto bg-gradient-to-b from-teal-500 rounded-full w-40 h-40 relative overflow-hidden md:h-96 md:w-64">
+            <div className="mx-auto bg-gradient-to-b from-space-neon rounded-full w-40 h-40 relative overflow-hidden md:h-96 md:w-64">
               <Image src={aboutImage} layout="fill" objectFit="cover" alt="" />
             </div>
           </div>
         </FadeLeft>
         <FadeRight className="content-center">
           <div className="">
-            <h3 className="text-3xl py-1 dark:text-white ">About Me</h3>
+            <h3 className="text-3xl py-1 dark:text-white ">Profile</h3>
             <p className="text-base py-2 text-gray-800 dark:text-gray-200">
               Experienced in{" "}
               <strong>
@@ -36,10 +36,6 @@ export default function Profile() {
               <strong>robust and innovative backend solutions</strong>. Capable
               of working <strong>independently</strong> or as part of a team to
               drive backend excellence.
-            </p>
-            <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
-              I offer from a wide range of services, including brand design,
-              programming and teaching.
             </p>
           </div>
         </FadeRight>

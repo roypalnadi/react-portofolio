@@ -20,6 +20,7 @@ module.exports = {
       fontFamily: {
         burtons: "burtons",
         poppins: ["Poppins", "sans-serif"],
+        sans: ["DM Sans", "sans-serif"],
       },
     },
   },

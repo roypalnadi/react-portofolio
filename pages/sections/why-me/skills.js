@@ -1,4 +1,3 @@
-import Image from "next/image";
 import {
   CSS,
   Flutter,
@@ -12,21 +11,22 @@ import {
   ReactJS,
   Tailwind,
   TS,
-} from "../svg";
-import Tools from "../component/tools";
+} from "../../svg";
+import Tools from "../../component/tools";
+import { FadeLeft } from "../../fade";
 
-export default function EssentialTool() {
+export default function Skills() {
   return (
     <>
       <div>
-        <h3 className="text-3xl py-1 dark:text-space-white ">
-          Essential Tools I Use
-        </h3>
-        <p className="text-base py-2 w-1/2 text-gray-800 dark:text-gray-200">
-          Explore the advanced tools and technologies I use to build
-          outstanding, <br />
-          high-performance websites and applications.
-        </p>
+        <FadeLeft>
+          <h3 className="text-3xl py-1 dark:text-space-white ">Skills</h3>
+          <p className="text-base py-2 text-gray-800 dark:text-gray-200">
+            Explore the advanced tools and technologies I use to build
+            outstanding, <br />
+            high-performance websites and applications.
+          </p>
+        </FadeLeft>
       </div>
       <div className="grid lg:grid-cols-4 grid-cols-2 gap-4">
         <Tools title={"PHP"} subTitle={"Logical Programming"} icon={<PHP />} />

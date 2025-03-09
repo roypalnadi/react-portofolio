@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 @import url('https://fonts.googleapis.com/css2?family=Exo:wght@400;700&display=swap');
+@import "@fontsource/dm-sans";
 
 html,
 body {
@@ -151,4 +152,9 @@ a {
     gap: .2em;
     font-weight: 900;
     display: flex;
+}
+
+.count-up-text {
+    font-size: 4rem;
+    font-weight: 700;
 }
