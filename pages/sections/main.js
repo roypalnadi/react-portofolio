@@ -103,7 +103,7 @@ export default function Main({ setDarkMode, darkMode }) {
         <div className="flex gap-2 w-20 lg:w-28">
           <CountUp
             from={0}
-            to={4}
+            to={5}
             separator=","
             direction="up"
             duration={2}

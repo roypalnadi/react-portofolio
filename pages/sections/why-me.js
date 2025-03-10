@@ -1,5 +1,8 @@
 import { useState } from "react";
 import Skills from "./why-me/skills";
+import Experience from "./why-me/experience";
+import Education from "./why-me/education";
+import AboutMe from "./why-me/about-me";
 
 export default function WhyMe() {
   const [whyMe, setWhyMe] = useState("experience");
@@ -7,20 +10,22 @@ export default function WhyMe() {
   const renderWhyMe = () => {
     switch (whyMe) {
       case "experience":
-        return <p>1</p>;
+        return <Experience />;
       case "education":
-        return <p>1</p>;
+        return <Education />;
       case "skills":
         return <Skills />;
       case "about me":
-        return;
+        return <AboutMe />;
     }
   };
 
   return (
     <div className="lg:flex w-full gap-10">
       <div className="lg:w-1/4">
-        <h3 className="text-3xl py-1 dark:text-space-white ">Why Hire Me ?</h3>
+        <h3 className="text-3xl py-1 dark:text-space-white font-semibold">
+          Why Hire Me ?
+        </h3>
         <p className="text-base py-2 text-gray-800 dark:text-gray-200 mb-5">
           Learn more about my skills and expertise.
         </p>
@@ -75,7 +80,7 @@ export default function WhyMe() {
           </button>
         </div>
       </div>
-      <div className="lg:w-3/4">{renderWhyMe()}</div>
+      <div className="pt-5 lg:w-3/4 lg:pt-0">{renderWhyMe()}</div>
     </div>
   );
 }
