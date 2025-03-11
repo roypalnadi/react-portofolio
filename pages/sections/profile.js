@@ -15,7 +15,9 @@ export default function Profile() {
         </FadeLeft>
         <FadeRight className="content-center">
           <div className="">
-            <h3 className="text-3xl py-1 dark:text-white ">Profile</h3>
+            <h3 className="text-3xl py-1 dark:text-white font-semibold">
+              Profile
+            </h3>
             <p className="text-base py-2 text-gray-800 dark:text-gray-200">
               Experienced in{" "}
               <strong>

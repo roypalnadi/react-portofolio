@@ -2,7 +2,6 @@ import { AiFillFacebook, AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 import BlurText from "../../reactbits/textAnimations/BlurText/BlurText";
 import DecryptedText from "../../reactbits/textAnimations/DecryptedText/DecryptedText";
 import SplitText from "../../reactbits/textAnimations/SplitText/SplitText";
-import RotatingText from "../../reactbits/textAnimations/RotatingText/RotatingText";
 import CountUp from "../../reactbits/textAnimations/CountUp/CountUp";
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import Image from "next/image";
@@ -44,7 +43,7 @@ export default function Main({ setDarkMode, darkMode }) {
 
           <SplitText
             text="Hello I`m"
-            className="text-5xl dark:text-space-white font-medium md:text-6xl text-center lg:text-start"
+            className="text-5xl dark:text-space-white md:text-6xl text-center lg:text-start font-semibold"
             delay={150}
             animationFrom={{ opacity: 0, transform: "translate3d(0,50px,0)" }}
             animationTo={{ opacity: 1, transform: "translate3d(0,0,0)" }}
@@ -55,7 +54,7 @@ export default function Main({ setDarkMode, darkMode }) {
 
           <SplitText
             text="Roy Palnadi Pebruar"
-            className="text-5xl text-space-neon font-medium md:text-6xl  text-center lg:text-start"
+            className="text-5xl text-space-neon md:text-6xl text-center lg:text-start font-semibold"
             delay={150}
             animationFrom={{ opacity: 0, transform: "translate3d(0,50px,0)" }}
             animationTo={{ opacity: 1, transform: "translate3d(0,0,0)" }}
@@ -64,7 +63,7 @@ export default function Main({ setDarkMode, darkMode }) {
             rootMargin="-50px"
           />
 
-          <p className="text-base pt-5 w-full lg:w-3/4 pb-2 text-gray-800 dark:text-gray-200 max-w-xl md:text-xl h-28">
+          <p className="text-base pt-5 text-center lg:text-start lg:w-3/4 pb-2 text-gray-800 dark:text-gray-200 md:text-xl h-28">
             <DecryptedText
               text="Bringing your ideas to life with top-notch programming services.
                             Join me below, and let’s make it happen!"

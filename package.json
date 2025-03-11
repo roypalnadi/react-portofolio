@@ -10,6 +10,7 @@
     "export": "next export"
   },
   "dependencies": {
+    "@emailjs/browser": "^4.4.1",
     "@fontsource/dm-sans": "^5.2.5",
     "@react-spring/web": "^9.7.5",
     "firebase": "^9.10.0",

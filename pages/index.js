@@ -3,6 +3,7 @@ import { useState, useRef } from "react";
 import {
   VscAccount,
   VscHome,
+  VscMail,
   VscQuestion,
   VscSettingsGear,
 } from "react-icons/vsc";
@@ -11,6 +12,7 @@ import Dock from "../reactbits/components/Dock/Dock";
 import Main from "./sections/main.js";
 import Profile from "./sections/profile.js";
 import WhyMe from "./sections/why-me.js";
+import Collab from "./sections/collab.js";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(true);
@@ -19,6 +21,7 @@ export default function Home() {
     home: useRef(null),
     profile: useRef(null),
     whyMe: useRef(null),
+    collab: useRef(null),
   };
 
   const items = [
@@ -44,10 +47,11 @@ export default function Home() {
         sectionsRef.whyMe.current?.scrollIntoView({ behavior: "smooth" }),
     },
     {
-      icon: <VscSettingsGear size={18} />,
-      label: "Settings",
+      icon: <VscMail size={18} />,
+      label: "Collab",
       classNameIcon: "dark:text-white",
-      onClick: () => alert("Settings!"),
+      onClick: () =>
+        sectionsRef.collab.current?.scrollIntoView({ behavior: "smooth" }),
     },
   ];
 
@@ -84,6 +88,9 @@ export default function Home() {
         </section>
         <section ref={sectionsRef.whyMe} className="py-10">
           <WhyMe />
+        </section>
+        <section ref={sectionsRef.collab} className="py-10">
+          <Collab />
         </section>
       </main>
     </div>
