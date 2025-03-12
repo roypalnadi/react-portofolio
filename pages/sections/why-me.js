@@ -21,7 +21,7 @@ export default function WhyMe() {
   };
 
   return (
-    <div className="lg:flex w-full gap-10">
+    <div className="md:flex w-full gap-10">
       <div className="lg:w-1/4">
         <h3 className="text-3xl py-1 dark:text-space-white font-semibold">
           Why Hire Me ?
