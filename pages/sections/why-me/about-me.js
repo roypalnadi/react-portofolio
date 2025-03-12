@@ -17,7 +17,7 @@ export default function AboutMe() {
         </FadeLeft>
       </div>
       <div className="">
-        <div className="border border-space-200 dark:border-space-white bg-white dark:bg-space-200 rounded-md py-4 px-6 flex flex-col lg:grid lg:grid-cols-2 gap-1">
+        <div className="border border-space-200 dark:border-space-white bg-white dark:bg-space-200 rounded-md py-4 px-6 flex flex-col sm:grid sm:grid-cols-2 gap-1">
           <div className="flex gap-5">
             <p className="text-xs text-gray-800 dark:text-gray-200 content-center">
               Name

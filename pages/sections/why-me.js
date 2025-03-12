@@ -22,7 +22,7 @@ export default function WhyMe() {
 
   return (
     <div className="md:flex w-full gap-10">
-      <div className="lg:w-1/4">
+      <div className="md:w-1/4">
         <h3 className="text-3xl py-1 dark:text-space-white font-semibold">
           Why Hire Me ?
         </h3>
@@ -80,7 +80,7 @@ export default function WhyMe() {
           </button>
         </div>
       </div>
-      <div className="pt-5 lg:w-3/4 lg:pt-0">{renderWhyMe()}</div>
+      <div className="pt-5 md:w-3/4 md:pt-0">{renderWhyMe()}</div>
     </div>
   );
 }

@@ -16,7 +16,7 @@ export default function Experience() {
           </p>
         </FadeLeft>
       </div>
-      <div className="flex flex-col lg:grid lg:grid-cols-2 gap-4">
+      <div className="flex flex-col lg:grid xl:grid-cols-2 gap-4">
         <Box
           firstTitle={"July 2020 - Present"}
           secondTitle={"PT. Qelopak Teknologi Indonesia"}
