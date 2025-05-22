@@ -158,3 +158,8 @@ a {
     font-size: 4rem;
     font-weight: 700;
 }
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  font-size: 15px !important; /* ukuran panah */
+}

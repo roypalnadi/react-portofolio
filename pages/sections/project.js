@@ -1,0 +1,55 @@
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/navigation";
+import { Navigation } from "swiper/modules";
+import { FadeLeft } from "../fade";
+import ProjectCard from "../component/project-card";
+import sinih from "../../public/project/sinih.png";
+
+export default function Project() {
+  return (
+    <div className="w-full text-center">
+      <FadeLeft>
+        <h3 className="text-3xl py-1 dark:text-space-white font-semibold">
+          My Projects
+        </h3>
+      </FadeLeft>
+      <FadeLeft>
+        <p className="text-base py-2 text-gray-800 dark:text-gray-200 mb-5">
+          Explore some of my recent work and personal projects that showcase my
+          skills and creativity.
+        </p>
+      </FadeLeft>
+      <FadeLeft>
+        <div className="">
+          <Swiper
+            className="!p-1"
+            spaceBetween={20}
+            breakpoints={{
+              0: {
+                slidesPerView: 1,
+                centeredSlides: false,
+              },
+              768: {
+                slidesPerView: 2,
+                centeredSlides: false,
+              },
+            }}
+            modules={[Navigation]}
+            navigation
+          >
+            <SwiperSlide>
+              <ProjectCard
+                image={sinih}
+                title="Sinih Meeting Web"
+                description="Sinih is a lightweight web-based meeting platform. No need to install any apps — just start a meeting right from your browser."
+                techStack={["ReactJS", "NextJS", "PostgresSQL", "Typescript"]}
+                link="https://sinih.vercel.app"
+              />
+            </SwiperSlide>
+          </Swiper>
+        </div>
+      </FadeLeft>
+    </div>
+  );
+}

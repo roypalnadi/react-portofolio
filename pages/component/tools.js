@@ -1,10 +1,14 @@
 import { FadeLeft } from "../fade";
 
-export default function Tools({ icon, title, subTitle }) {
+export default function Tools({ icon, title, subTitle, className }) {
   return (
     <FadeLeft>
-      <div className="border border-space-200 dark:border-space-white bg-white dark:bg-space-200 rounded-md flex p-2 gap-2">
-        <div className="bg-space-300 rounded-md w-full h-12 w-12 grid place-items-center p-2">
+      <div
+        className={`border border-space-200 dark:border-space-white bg-white dark:bg-space-200 rounded-md flex p-2 gap-2 ${
+          className ?? ""
+        }`}
+      >
+        <div className="bg-space-300 rounded-md h-12 w-12 grid place-items-center p-2">
           {icon}
         </div>
         <div className="content-center">
