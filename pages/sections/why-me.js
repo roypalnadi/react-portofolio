@@ -22,11 +22,11 @@ export default function WhyMe() {
   };
 
   return (
-    <div className="md:flex w-full gap-10">
+    <div className="md:flex w-full gap-6">
       <div className="md:w-1/4">
         <FadeLeft>
           <h3 className="text-3xl py-1 dark:text-space-white font-semibold">
-            Why Hire Me ?
+            Why <span className="text-space-neon">Hire</span> Me ?
           </h3>
           <p className="text-base py-2 text-gray-800 dark:text-gray-200 mb-5">
             Learn more about my skills and expertise.

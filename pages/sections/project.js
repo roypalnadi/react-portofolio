@@ -11,7 +11,7 @@ export default function Project() {
     <div className="w-full text-center">
       <FadeLeft>
         <h3 className="text-3xl py-1 dark:text-space-white font-semibold">
-          My Projects
+          <span className="text-space-neon">My</span> Projects
         </h3>
       </FadeLeft>
       <FadeLeft>

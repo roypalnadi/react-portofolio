@@ -42,7 +42,8 @@ export default function Collab() {
       <div className="flex-1 flex flex-col gap-5">
         <div className="pr-4">
           <h3 className="text-3xl py-1 dark:text-space-white font-semibold">
-            Contact me for collaboration
+            Contact <span className="text-space-neon">me</span> for{" "}
+            <span className="text-space-neon">collaboration</span>
           </h3>
           <p className="text-base py-2 text-gray-800 dark:text-gray-200">
             {
@@ -79,7 +80,7 @@ export default function Collab() {
             </div>
           </div>
         </div>
-        <div className="text-3xl flex gap-5 text-gray-800 dark:text-gray-200">
+        <div className="text-3xl flex justify-center md:justify-start gap-5 text-gray-800 dark:text-gray-200 mb-3 md:mb-0">
           <a
             target="_blank"
             href="https://www.facebook.com/roypalnadi.pebruar.9"
@@ -104,65 +105,65 @@ export default function Collab() {
         </div>
       </div>
       <div className="flex-1">
-        <form ref={form} onSubmit={sendEmail}>
-          <div className="flex flex-col gap-2">
-            {/* <div className="flex gap-2"> */}
-            <div className="flex flex-col">
-              <label className="mb-2 font-medium text-gray-800 dark:text-gray-200">
-                Name
-              </label>
-              <input
-                required={true}
-                name="name"
-                type="text"
-                placeholder="Enter your name here..."
-                className="w-full px-4 py-2 bg-space-300 border border-space-100 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-space-neon text-gray-800 dark:text-gray-200"
-              />
-            </div>
-            <div className="flex flex-col">
-              <label className="mb-2 font-medium text-gray-800 dark:text-gray-200">
-                Email
-              </label>
-              <input
-                required={true}
-                name="email"
-                type="email"
-                placeholder="user@example.com"
-                className="w-full px-4 py-2 bg-space-300 border border-space-100 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-space-neon text-gray-800 dark:text-gray-200"
-              />
-            </div>
-            {/* </div> */}
-            <div className="flex flex-col">
-              <label className="mb-2 font-medium text-gray-800 dark:text-gray-200">
-                Message
-              </label>
-              <textarea
-                required={true}
-                name="message"
-                type="text"
-                placeholder="Hello Roy"
-                className="h-36 w-full px-4 py-2 bg-space-300 border border-space-100 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-space-neon text-gray-800 dark:text-gray-200"
-              />
-            </div>
-            <button
-              disabled={!active}
-              className={`${
-                !active
-                  ? "bg-space-300"
-                  : "bg-space-neon hover:bg-space-neon/90"
-              } py-2 border-none rounded-md w-full transition`}
-              rel="noreferrer"
-              type="submit"
-            >
-              <span
-                className={`${
-                  !active ? "text-space-white" : "text-space-200"
-                } font-medium transition`}
-              >
-                Submit
-              </span>
-            </button>
+        <form
+          ref={form}
+          onSubmit={sendEmail}
+          className="h-full flex flex-col gap-2"
+        >
+          {/* <div className="flex gap-2"> */}
+          <div className="flex flex-col">
+            <label className="mb-2 font-medium text-gray-800 dark:text-gray-200">
+              Name
+            </label>
+            <input
+              required={true}
+              name="name"
+              type="text"
+              placeholder="Enter your name here..."
+              className="w-full px-4 py-2 bg-space-300 border border-space-100 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-space-neon text-gray-800 dark:text-gray-200"
+            />
           </div>
+          <div className="flex flex-col">
+            <label className="mb-2 font-medium text-gray-800 dark:text-gray-200">
+              Email
+            </label>
+            <input
+              required={true}
+              name="email"
+              type="email"
+              placeholder="user@example.com"
+              className="w-full px-4 py-2 bg-space-300 border border-space-100 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-space-neon text-gray-800 dark:text-gray-200"
+            />
+          </div>
+          {/* </div> */}
+          <div className="flex-1 flex flex-col">
+            <label className="mb-2 font-medium text-gray-800 dark:text-gray-200">
+              Message
+            </label>
+            <textarea
+              required={true}
+              name="message"
+              type="text"
+              placeholder="Hello Roy"
+              className="h-32 md:h-full w-full px-4 py-2 bg-space-300 border border-space-100 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-space-neon text-gray-800 dark:text-gray-200"
+            />
+          </div>
+          <button
+            disabled={!active}
+            className={`${
+              !active ? "bg-space-300" : "bg-space-neon hover:bg-space-neon/90"
+            } py-2 border-none rounded-md w-full transition`}
+            rel="noreferrer"
+            type="submit"
+          >
+            <span
+              className={`${
+                !active ? "text-space-white" : "text-space-200"
+              } font-medium transition`}
+            >
+              Submit
+            </span>
+          </button>
         </form>
       </div>
     </div>

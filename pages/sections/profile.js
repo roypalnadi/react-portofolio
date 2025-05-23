@@ -1,24 +1,29 @@
-import Image from "next/image";
-import { FadeLeft, FadeRight } from "../fade";
-import aboutImage from "../../public/about-me.png";
+import {
+  AiOutlineCloudServer,
+  AiOutlineLaptop,
+  AiOutlineLayout,
+  AiOutlineLink,
+} from "react-icons/ai";
+import BoxProfile from "../component/box-profile";
+import { FadeLeft } from "../fade";
 
 export default function Profile() {
   return (
     <div className="my-10">
-      <div className="lg:flex gap-10 justify-between">
-        <FadeLeft className="content-center">
+      <div className="lg:flex gap-14 justify-between items-start">
+        {/* <FadeLeft className="content-center">
           <div className="">
             <div className="mx-auto bg-gradient-to-b from-space-neon rounded-full w-40 h-40 relative overflow-hidden md:h-96 md:w-64">
               <Image src={aboutImage} layout="fill" objectFit="cover" alt="" />
             </div>
           </div>
-        </FadeLeft>
-        <FadeRight className="content-center">
+        </FadeLeft> */}
+        <FadeLeft className="content-center flex-1">
           <div className="">
             <h3 className="text-3xl py-1 dark:text-white font-semibold">
-              Profile
+              About <span className="text-space-neon">Me</span>
             </h3>
-            <p className="text-base py-2 text-gray-800 dark:text-gray-200">
+            <p className="text-sm py-2 text-gray-800 dark:text-gray-200">
               Experienced in{" "}
               <strong>
                 {" "}
@@ -40,53 +45,33 @@ export default function Profile() {
               drive backend excellence.
             </p>
           </div>
-        </FadeRight>
+        </FadeLeft>
+        <div className="flex-1 flex flex-col gap-5">
+          <BoxProfile
+            firstTitle={"Web Development"}
+            secondTitle={
+              "Building interactive UIs with modern JavaScript frameworks."
+            }
+            icon={<AiOutlineLaptop size={25} className="text-space-neon" />}
+          />
+          <BoxProfile
+            firstTitle={"Backend Development"}
+            secondTitle={
+              "Designing and developing robust server-side logic, databases, and APIs to power web applications."
+            }
+            icon={
+              <AiOutlineCloudServer size={25} className="text-space-neon" />
+            }
+          />
+          <BoxProfile
+            firstTitle={"API Integration"}
+            secondTitle={
+              "Connecting and managing external services and data sources."
+            }
+            icon={<AiOutlineLink size={25} className="text-space-neon" />}
+          />
+        </div>
       </div>
-      {/* <div className="lg:flex gap-10">
-              <div className="text-center shadow-lg p-10 rounded-xl my-10  dark:bg-white flex-1">
-                <Image src={design} width={100} height={100} />
-                <h3 className="text-lg font-medium pt-8 pb-2  ">
-                  Beautiful Designs
-                </h3>
-                <p className="py-2">
-                  Creating elegant designs suited for your needs following core
-                  design theory.
-                </p>
-                <h4 className="py-4 text-teal-600">Design Tools I Use</h4>
-                <p className="text-gray-800 py-1">Photoshop</p>
-                <p className="text-gray-800 py-1">Illustrator</p>
-                <p className="text-gray-800 py-1">Figma</p>
-                <p className="text-gray-800 py-1">Indesign</p>
-              </div>
-              <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
-                <Image src={code} width={100} height={100} />
-                <h3 className="text-lg font-medium pt-8 pb-2 ">
-                  Code your dream project
-                </h3>
-                <p className="py-2">
-                  Do you have an idea for your next great website? Let's make it
-                  a reality.
-                </p>
-                <h4 className="py-4 text-teal-600">Design Tools I Use</h4>
-                <p className="text-gray-800 py-1">Photoshop</p>
-                <p className="text-gray-800 py-1">Illustrator</p>
-                <p className="text-gray-800 py-1">Figma</p>
-                <p className="text-gray-800 py-1">Indesign</p>
-              </div>
-              <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
-                <Image src={consulting} width={100} height={100} />
-                <h3 className="text-lg font-medium pt-8 pb-2 ">Consulting</h3>
-                <p className="py-2">
-                  Are you interested in feedback for your current project? I can
-                  give you tips and tricks to level it up.
-                </p>
-                <h4 className="py-4 text-teal-600">Design Tools I Use</h4>
-                <p className="text-gray-800 py-1">Photoshop</p>
-                <p className="text-gray-800 py-1">Illustrator</p>
-                <p className="text-gray-800 py-1">Figma</p>
-                <p className="text-gray-800 py-1">Indesign</p>
-              </div>
-            </div> */}
     </div>
   );
 }

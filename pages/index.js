@@ -88,7 +88,7 @@ export default function Home() {
         magnification={70}
         className="border border-space-200 dark:border-space-white bg-white dark:bg-space-100 opacity-70"
       />
-      <main className="px-10 md:px-20 lg:px-52">
+      <main className="px-10 md:px-20 lg:px-52 mb-12">
         <section ref={sectionsRef.home} className="mb-10">
           <Main setDarkMode={setDarkMode} darkMode={darkMode} />
         </section>
