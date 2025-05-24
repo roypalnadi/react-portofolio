@@ -45,6 +45,7 @@ export default function Project() {
                 description="Sinih is a lightweight web-based meeting platform. No need to install any apps — just start a meeting right from your browser."
                 techStack={["ReactJS", "NextJS", "PostgresSQL", "Typescript"]}
                 link="https://sinih.vercel.app"
+                linkGtihub="https://github.com/roypalnadi/sinih"
               />
             </SwiperSlide>
           </Swiper>

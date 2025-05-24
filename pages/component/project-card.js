@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { AiOutlineGithub } from "react-icons/ai";
 
 export default function ProjectCard({
   image,
@@ -6,6 +7,7 @@ export default function ProjectCard({
   description,
   techStack = [],
   link,
+  linkGtihub,
 }) {
   return (
     <div className="rounded-lg border text-gray-800 dark:text-gray-200 overflow-hidden border-none shadow-lg hover:shadow-xl transition-all duration-300 bg-card hover:scale-[1.02] group">
@@ -38,9 +40,18 @@ export default function ProjectCard({
       </div>
       <div className="items-center p-6 px-6 pb-6 pt-0 flex gap-2 bg-space-300">
         <a
+          href={linkGtihub ?? "#"}
+          target="_blank"
+          className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 border bg-space-neon hover:bg-space-neon/80 text-gray-800 h-10 px-4 py-2 w-full shadow-sm hover:shadow group"
+          rel="noreferrer"
+        >
+          Github
+          <AiOutlineGithub size={20} />
+        </a>
+        <a
           href={link ?? "#"}
           target="_blank"
-          className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 border border-input hover:bg-space-neon/80 hover:text-gray-800 h-10 px-4 py-2 w-full shadow-sm hover:shadow group"
+          className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 border hover:bg-space-neon/80 hover:text-gray-800 h-10 px-4 py-2 w-full shadow-sm hover:shadow group"
           rel="noreferrer"
         >
           Live Demo

@@ -42,8 +42,8 @@ export default function Collab() {
       <div className="flex-1 flex flex-col gap-5">
         <div className="pr-4">
           <h3 className="text-3xl py-1 dark:text-space-white font-semibold">
-            Contact <span className="text-space-neon">me</span> for{" "}
-            <span className="text-space-neon">collaboration</span>
+            Contact me{" "}
+            <span className="text-space-neon">for collaboration</span>
           </h3>
           <p className="text-base py-2 text-gray-800 dark:text-gray-200">
             {
