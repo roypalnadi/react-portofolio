@@ -7,7 +7,7 @@ export default function Experience() {
       <div>
         <FadeLeft>
           <h3 className="text-3xl py-1 dark:text-space-white font-semibold">
-            My Experience
+            My <span className="text-space-neon">Experience</span>
           </h3>
           <p className="text-base py-2 text-gray-800 dark:text-gray-200">
             A versatile developer who constantly explores, masters various

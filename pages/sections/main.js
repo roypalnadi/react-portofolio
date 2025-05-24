@@ -11,7 +11,9 @@ export default function Main({ setDarkMode, darkMode }) {
   return (
     <>
       <nav className="py-10 flex justify-between dark:text-white">
-        <h1 className="font-burtons text-xl">Roy</h1>
+        <h1 className="font-burtons text-xl">
+          Port<span className="text-sm text-space-neon">folio</span>
+        </h1>
         <ul className="flex items-center">
           {/* <li>
             <BsFillMoonStarsFill
@@ -31,7 +33,7 @@ export default function Main({ setDarkMode, darkMode }) {
           </li>
         </ul>
       </nav>
-      <div className="lg:flex text-center md:text-start py-4 lg:py-7">
+      <div className="lg:flex items-center text-center md:text-start py-4 lg:py-7">
         <div className="content-center">
           <BlurText
             text="Software Developer."
@@ -94,7 +96,7 @@ export default function Main({ setDarkMode, darkMode }) {
             </a>
           </div>
         </div>
-        <div className="mx-auto bg-gradient-to-b from-space-neon rounded-full w-40 h-40 relative overflow-hidden md:h-80 md:w-80">
+        <div className="mx-auto bg-gradient-to-b from-space-neon rounded-full w-40 h-40 relative overflow-hidden md:h-60 md:w-80">
           <Image src={deved} layout="fill" objectFit="cover" alt="" />
         </div>
       </div>

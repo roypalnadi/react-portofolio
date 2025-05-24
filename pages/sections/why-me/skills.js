@@ -20,7 +20,9 @@ export default function Skills() {
     <>
       <div>
         <FadeLeft>
-          <h3 className="text-3xl py-1 dark:text-space-white ">Skills</h3>
+          <h3 className="text-3xl py-1 dark:text-space-white font-semibold">
+            My <span className="text-space-neon">Skills</span>
+          </h3>
           <p className="text-base py-2 text-gray-800 dark:text-gray-200">
             Explore the advanced tools and technologies I use to build
             outstanding, <br />

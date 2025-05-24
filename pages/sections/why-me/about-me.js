@@ -7,7 +7,7 @@ export default function AboutMe() {
       <div>
         <FadeLeft>
           <h3 className="text-3xl py-1 dark:text-space-white font-semibold">
-            About Me
+            About <span className="text-space-neon">Me</span>
           </h3>
           <p className="text-base py-2 text-gray-800 dark:text-gray-200">
             Passionate about technology and innovation, I thrive on solving

@@ -50,7 +50,7 @@ export default function Profile() {
           <BoxProfile
             firstTitle={"Web Development"}
             secondTitle={
-              "Building interactive UIs with modern JavaScript frameworks."
+              "Building responsive, user-friendly, and interactive websites using modern web technologies to deliver seamless user experiences."
             }
             icon={<AiOutlineLaptop size={25} className="text-space-neon" />}
           />
