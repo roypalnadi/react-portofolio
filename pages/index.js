@@ -67,8 +67,8 @@ export default function Home() {
   return (
     <div className={darkMode ? "dark" : ""}>
       <Head>
-        <title>Create Next App</title>
-        <meta name="description" content="Roy Portofolio" />
+        <title>Portfolio Roy</title>
+        <meta name="description" content="Roy Portfolio" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Particles

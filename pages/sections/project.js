@@ -5,6 +5,7 @@ import { Navigation } from "swiper/modules";
 import { FadeLeft } from "../fade";
 import ProjectCard from "../component/project-card";
 import sinih from "../../public/project/sinih.png";
+import sekita from "../../public/project/sekita-chat-app.png";
 
 export default function Project() {
   return (
@@ -43,9 +44,31 @@ export default function Project() {
                 image={sinih}
                 title="Sinih Meeting Web"
                 description="Sinih is a lightweight web-based meeting platform. No need to install any apps — just start a meeting right from your browser."
-                techStack={["ReactJS", "NextJS", "PostgresSQL", "Typescript"]}
+                techStack={[
+                  "ReactJS",
+                  "NextJS",
+                  "PostgresSQL",
+                  "Typescript",
+                  "Getstream",
+                ]}
                 link="https://sinih.vercel.app"
                 linkGtihub="https://github.com/roypalnadi/sinih"
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <ProjectCard
+                image={sekita}
+                title="Sekita Chat App"
+                description="Sekita Chat App helps you talk with friends and family quickly and safely. It's easy to use and works well on all your devices."
+                techStack={[
+                  "ReactJS",
+                  "NextJS",
+                  "Firebase",
+                  "Typescript",
+                  "Getstream",
+                ]}
+                link="https://sekita-chat-app.vercel.app"
+                linkGtihub="https://github.com/roypalnadi/sekita-chat-app"
               />
             </SwiperSlide>
           </Swiper>
