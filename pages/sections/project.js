@@ -6,6 +6,7 @@ import { FadeLeft } from "../fade";
 import ProjectCard from "../component/project-card";
 import sinih from "../../public/project/sinih.png";
 import sekita from "../../public/project/sekita-chat-app.png";
+import mikir from "../../public/project/mikir-ai-assistant.png";
 
 export default function Project() {
   return (
@@ -69,6 +70,16 @@ export default function Project() {
                 ]}
                 link="https://sekita-chat-app.vercel.app"
                 linkGtihub="https://github.com/roypalnadi/sekita-chat-app"
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <ProjectCard
+                image={mikir}
+                title="Mikir AI Assistant"
+                description="Get instant help with tasks, answers, and more with our intuitive AI-powered assistant. Simplify your life with Mikir AI Assistant!"
+                techStack={["ReactJS", "NextJS", "Typescript", "Together AI"]}
+                link="https://mikir-ai-assistant.vercel.app/"
+                linkGtihub="https://github.com/roypalnadi/mikir-ai-assistant"
               />
             </SwiperSlide>
           </Swiper>
